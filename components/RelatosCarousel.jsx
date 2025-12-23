@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Link from "next/link";
 
 const feedbacks = [
 	{ id: 1, nome: "Ana", texto: "A leitura foi absurda de precisa." },
@@ -34,18 +33,29 @@ export default function FeedbacksCarousel() {
 
 	return (
 		<section className="max-w-6xl mx-auto px-6 py-20">
-			<div className="flex justify-between items-center mb-6">
-				<h2 className="text-3xl font-bold text-yellow-500">Feedbacks</h2>
-			</div>
+			<h2 className="text-3xl font-bold text-yellow-500 mb-6">Feedbacks</h2>
 
 			<div className="relative">
 				{/* Botão esquerdo */}
 				<button
 					onClick={prev}
 					disabled={index === 0}
-					className="absolute -left-6 top-1/2 -translate-y-1/2 text-yellow-500 disabled:opacity-30"
+					className="
+						absolute 
+						-left-14 
+						top-1/2 
+						-translate-y-1/2
+						w-10 h-10
+						flex items-center justify-center
+						rounded-full
+						bg-black/60
+						border border-red-900
+						text-yellow-500
+						hover:scale-110 transition
+						disabled:opacity-30
+					"
 				>
-					<ChevronLeft size={32} />
+					<ChevronLeft size={40} />
 				</button>
 
 				{/* Cards */}
@@ -64,9 +74,22 @@ export default function FeedbacksCarousel() {
 				<button
 					onClick={next}
 					disabled={index + 3 >= total}
-					className="absolute -right-6 top-1/2 -translate-y-1/2 text-yellow-500 disabled:opacity-30"
+					className="
+						absolute 
+						-right-14 
+						top-1/2 
+						-translate-y-1/2
+						w-10 h-10
+						flex items-center justify-center
+						rounded-full
+						bg-black/60
+						border border-red-900
+						text-yellow-500
+						hover:scale-110 transition
+						disabled:opacity-30
+					"
 				>
-					<ChevronRight size={32} />
+					<ChevronRight size={40} />
 				</button>
 			</div>
 		</section>

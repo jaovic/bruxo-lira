@@ -11,7 +11,7 @@ export default function Home() {
 	return (
 		<main className="bg-black text-red-700">
 			{/* HERO */}
-			<section className="py-28 text-center px-6">
+			<section className="min-h-screen flex flex-col justify-center text-center px-6">
 				<Image
 					src="/hero.jpg"
 					alt="Especialista espiritual"
@@ -108,7 +108,6 @@ export default function Home() {
 
 				<RelatosCarousel />
 
-				{/* VER TODOS OS RELATOS */}
 				<div className="text-center mt-14">
 					<Button
 						asChild
@@ -143,7 +142,6 @@ export default function Home() {
 				Resultados variam conforme fé, merecimento e situação espiritual.
 			</footer>
 
-			{/* WHATSAPP FLUTUANTE */}
 			<WhatsappFloating />
 		</main>
 	);
