@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function WhatsappFloating() {
 	return (
 		<a
-			href="https://wa.me/5599999999999"
+			href="https://wa.me/+5531975113397"
 			target="_blank"
 			aria-label="Contato WhatsApp"
 			className="

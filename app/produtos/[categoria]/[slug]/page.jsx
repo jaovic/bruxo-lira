@@ -39,7 +39,7 @@ export default async function ProdutoPage({ params }) {
 						className="bg-gradient-to-r from-green-500 to-green-700 text-black font-bold px-10 py-6 text-lg shadow-[0_0_40px_rgba(0,255,0,0.9)]"
 					>
 						<a
-							href={`https://wa.me/5599999999999?text=Tenho interesse no produto: ${produto.titulo}`}
+							href={`https://wa.me/+5531975113397?text=Tenho interesse no produto: ${produto.titulo}`}
 							target="_blank"
 						>
 							Iniciar Atendimento

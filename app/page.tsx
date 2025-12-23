@@ -169,7 +169,7 @@ export default function Home() {
 					asChild
 					className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-black font-extrabold px-12 py-8 text-xl shadow-[0_0_45px_rgba(0,255,0,0.9)]"
 				>
-					<a href="https://wa.me/5599999999999" target="_blank">
+					<a href="https://wa.me/+5531975113397" target="_blank">
 						Iniciar Atendimento
 					</a>
 				</Button>

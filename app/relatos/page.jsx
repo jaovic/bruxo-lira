@@ -40,7 +40,7 @@ export default function RelatosPage() {
 
 			<div className="text-center">
 				<Link
-					href="https://wa.me/5599999999999?text=Quero%20fazer%20um%20trabalho%20espiritual"
+					href="https://wa.me/+5531975113397?text=Quero%20fazer%20um%20trabalho%20espiritual"
 					target="_blank"
 					className="inline-flex items-center justify-center gap-2
 						bg-gradient-to-r from-green-500 to-green-700
