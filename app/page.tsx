@@ -63,78 +63,79 @@ export default function Home() {
 
 			{/* CATEGORIAS */}
 			<section
-				id="produtos"
-				className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-8"
+				className="w-full py-24"
 				style={{ backgroundImage: "url('/bg-textura.jpg')" }}
 			>
-				<Link href="/produtos/oraculos">
-					<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
-						<Image
-							src="/categorias/oraculos.jpg"
-							alt="Oráculos"
-							width={400}
-							height={300}
-							className="rounded-t-lg object-cover h-[220px] w-full"
-						/>
-						<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
-							<div>
-								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
-									Oráculos
-								</h3>
-								<p className="text-red-600 text-sm">
-									Leituras espirituais diretas, sem rodeios, focadas na verdade
-									do seu momento atual.
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-				</Link>
+				<div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+					<Link href="/produtos/oraculos">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
+							<Image
+								src="/categorias/oraculos.jpg"
+								alt="Oráculos"
+								width={400}
+								height={300}
+								className="rounded-t-lg object-cover h-[220px] w-full"
+							/>
+							<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
+								<div>
+									<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+										Oráculos
+									</h3>
+									<p className="text-red-600 text-sm">
+										Leituras espirituais diretas, sem rodeios, focadas na
+										verdade do seu momento atual.
+									</p>
+								</div>
+							</CardContent>
+						</Card>
+					</Link>
 
-				<Link href="/produtos/magias">
-					<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
-						<Image
-							src="/categorias/magias.jpg"
-							alt="Magias"
-							width={400}
-							height={300}
-							className="rounded-t-lg object-cover h-[220px] w-full"
-						/>
-						<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
-							<div>
-								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
-									Magias
-								</h3>
-								<p className="text-red-600 text-sm">
-									Trabalhos energéticos sérios para limpeza, abertura de
-									caminhos e proteção espiritual.
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-				</Link>
+					<Link href="/produtos/magias">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
+							<Image
+								src="/categorias/magias.jpg"
+								alt="Magias"
+								width={400}
+								height={300}
+								className="rounded-t-lg object-cover h-[220px] w-full"
+							/>
+							<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
+								<div>
+									<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+										Magias
+									</h3>
+									<p className="text-red-600 text-sm">
+										Trabalhos energéticos sérios para limpeza, abertura de
+										caminhos e proteção espiritual.
+									</p>
+								</div>
+							</CardContent>
+						</Card>
+					</Link>
 
-				<Link href="/produtos/farmacia">
-					<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
-						<Image
-							src="/categorias/farmacia.jpg"
-							alt="Farmácia Espiritual"
-							width={400}
-							height={300}
-							className="rounded-t-lg object-cover h-[220px] w-full"
-						/>
-						<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
-							<div>
-								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
-									Farmácia Espiritual
-								</h3>
-								<p className="text-red-600 text-sm">
-									Preparos espirituais específicos, feitos conforme a
-									necessidade de cada pessoa.
-								</p>
-							</div>
-						</CardContent>
-					</Card>
-				</Link>
+					<Link href="/produtos/farmacia">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
+							<Image
+								src="/categorias/farmacia.jpg"
+								alt="Farmácia Espiritual"
+								width={400}
+								height={300}
+								className="rounded-t-lg object-cover h-[220px] w-full"
+							/>
+							<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
+								<div>
+									<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+										Farmácia Espiritual
+									</h3>
+									<p className="text-red-600 text-sm">
+										Preparos espirituais específicos, feitos conforme a
+										necessidade de cada pessoa.
+									</p>
+								</div>
+							</CardContent>
+						</Card>
+					</Link>
+				</div>
 			</section>
 
 			{/* RELATOS */}
