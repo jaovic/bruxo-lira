@@ -22,19 +22,21 @@ export default async function CategoriaPage({ params }) {
 			<section className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
 				{produtosCategoria.map((p) => (
 					<Link key={p.slug} href={`/produtos/${categoria}/${p.slug}`}>
-						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full flex flex-col">
 							<Image
 								src={p.image}
 								alt={p.titulo}
 								width={400}
 								height={300}
-								className="rounded-t-lg object-cover"
+								className="rounded-t-lg object-cover h-55 w-full"
 							/>
-							<CardContent className="p-6">
-								<h3 className="text-xl text-yellow-500 font-bold">
-									{p.titulo}
-								</h3>
-								<p className="text-red-600 text-sm mt-2">{p.descricao}</p>
+							<CardContent className="p-6 flex-1 flex flex-col justify-between">
+								<div>
+									<h3 className="text-xl text-yellow-500 font-bold">
+										{p.titulo}
+									</h3>
+									<p className="text-red-600 text-sm mt-2">{p.descricao}</p>
+								</div>
 								<p className="mt-4 text-yellow-500 font-bold">{p.valor}</p>
 							</CardContent>
 						</Card>
