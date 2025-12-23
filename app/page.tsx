@@ -5,31 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import WhatsappFloating from "@/components/WhatsappFloating";
-import { Flame, Star } from "lucide-react";
-
-const produtos = [
-	{
-		slug: "amarracao-amorosa",
-		titulo: "Amarração Amorosa",
-		descricao: "União definitiva e retorno amoroso.",
-		valor: "R$ 1.200",
-		image: "/produtos/amarracao.jpg",
-	},
-	{
-		slug: "abertura-de-caminhos",
-		titulo: "Abertura de Caminhos",
-		descricao: "Desbloqueio financeiro e espiritual.",
-		valor: "R$ 900",
-		image: "/produtos/abertura.jpg",
-	},
-	{
-		slug: "protecao-espiritual",
-		titulo: "Proteção Espiritual",
-		descricao: "Fechamento de corpo completo.",
-		valor: "R$ 700",
-		image: "/produtos/protecao.jpg",
-	},
-];
+import RelatosCarousel from "@/components/RelatosCarousel";
 
 export default function Home() {
 	return (
@@ -47,35 +23,81 @@ export default function Home() {
 				<h1 className="text-5xl font-extrabold text-yellow-500">Bruxo Lira</h1>
 
 				<p className="mt-6 max-w-2xl mx-auto text-red-600">
-					Atendimentos realizados com responsabilidade, fundamento espiritual e
-					sigilo absoluto. Experiência comprovada com diversas situações
-					amorosas, financeiras e espirituais.
+					Atuando há mais de 3 anos com trabalhos espirituais sérios,
+					direcionados e sigilosos. Experiência comprovada com questões
+					amorosas, financeiras e espirituais, sempre com fundamento e
+					responsabilidade.
 				</p>
 			</section>
 
-			{/* PRODUTOS */}
+			{/* CATEGORIAS */}
 			<section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-8">
-				{produtos.map((p) => (
-					<Link key={p.slug} href={`/produtos/${p.slug}`}>
-						<Card className="bg-black border-red-900 cursor-pointer hover:scale-105 transition">
-							<Image
-								src={p.image}
-								alt={p.titulo}
-								width={400}
-								height={300}
-								className="rounded-t-lg object-cover"
-							/>
-							<CardContent className="p-6">
-								<Flame className="text-yellow-600 mb-2" />
-								<h3 className="text-xl text-yellow-500 font-bold">
-									{p.titulo}
+				<Link href="/produtos/oraculos">
+					<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
+						<Image
+							src="/categorias/oraculos.jpg"
+							alt="Oráculos"
+							width={400}
+							height={300}
+							className="rounded-t-lg object-cover h-[220px] w-full"
+						/>
+						<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
+							<div>
+								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+									Oráculos
 								</h3>
-								<p className="text-red-600 text-sm mt-2">{p.descricao}</p>
-								<p className="mt-4 text-yellow-500 font-bold">{p.valor}</p>
-							</CardContent>
-						</Card>
-					</Link>
-				))}
+								<p className="text-red-600 text-sm">
+									Leituras espirituais, respostas diretas e orientação
+									ancestral.
+								</p>
+							</div>
+						</CardContent>
+					</Card>
+				</Link>
+
+				<Link href="/produtos/magias">
+					<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
+						<Image
+							src="/categorias/magias.jpg"
+							alt="Magias"
+							width={400}
+							height={300}
+							className="rounded-t-lg object-cover h-[220px] w-full"
+						/>
+						<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
+							<div>
+								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+									Magias
+								</h3>
+								<p className="text-red-600 text-sm">
+									Pós, banhos e trabalhos energéticos.
+								</p>
+							</div>
+						</CardContent>
+					</Card>
+				</Link>
+
+				<Link href="/produtos/farmacia">
+					<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] flex flex-col">
+						<Image
+							src="/categorias/farmacia.jpg"
+							alt="Farmácia Espiritual"
+							width={400}
+							height={300}
+							className="rounded-t-lg object-cover h-[220px] w-full"
+						/>
+						<CardContent className="p-6 text-center flex-1 flex flex-col justify-between">
+							<div>
+								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+									Farmácia Espiritual
+								</h3>
+								<p className="text-red-600 text-sm">
+									Garrafadas, fórmulas e preparos espirituais.
+								</p>
+							</div>
+						</CardContent>
+					</Card>
+				</Link>
 			</section>
 
 			{/* RELATOS */}
@@ -84,25 +106,7 @@ export default function Home() {
 					Relatos Reais de Clientes
 				</h2>
 
-				<div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-					{[1, 2, 3].map((i) => (
-						<Card key={i} className="bg-black border-red-900">
-							<Image
-								src={`/relatos/relato${i}.jpg`}
-								width={400}
-								height={650}
-								alt="Print de conversa WhatsApp"
-								className="rounded-t-lg object-cover"
-							/>
-							<CardContent className="p-4">
-								<Star className="text-yellow-600 mb-2" />
-								<p className="text-red-600 text-sm">
-									Relato real de cliente satisfeito.
-								</p>
-							</CardContent>
-						</Card>
-					))}
-				</div>
+				<RelatosCarousel />
 
 				{/* VER TODOS OS RELATOS */}
 				<div className="text-center mt-14">
@@ -114,7 +118,6 @@ export default function Home() {
 					</Button>
 				</div>
 			</section>
-			<WhatsappFloating />
 
 			{/* CONTATO FINAL */}
 			<section className="px-6 py-28 text-center">
@@ -122,8 +125,8 @@ export default function Home() {
 					Atendimento Direto e Sigiloso
 				</h2>
 				<p className="text-red-600 mb-10 max-w-xl mx-auto">
-					Conversa direta, sem intermediários. Clique abaixo e fale comigo
-					agora.
+					Atendimento individual, sem intermediários. Clique abaixo e fale
+					diretamente comigo via WhatsApp.
 				</p>
 
 				<Button
@@ -139,6 +142,9 @@ export default function Home() {
 			<footer className="text-center text-xs text-red-800 pb-6">
 				Resultados variam conforme fé, merecimento e situação espiritual.
 			</footer>
+
+			{/* WHATSAPP FLUTUANTE */}
+			<WhatsappFloating />
 		</main>
 	);
 }
