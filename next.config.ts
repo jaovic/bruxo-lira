@@ -1,12 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  basePath: '/macumbeiro-landing',
-  assetPrefix: '/macumbeiro-landing/',
-  images: {
-    unoptimized: true,
-  },
-};
+import type { NextConfig } from "next";
 
-module.exports = nextConfig;
+const nextConfig: NextConfig = {
+  /* config options here */
+
+
+
+
+};
 
