@@ -54,7 +54,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* MANIFESTO / SOBRE */}
+			{/* MANIFESTO */}
 			<section
 				id="manifesto"
 				className="px-6 py-32 bg-gradient-to-b from-black via-red-950 to-black"
@@ -151,17 +151,98 @@ export default function Home() {
 				</div>
 			</section>
 
-			{/* RESTANTE DA PÁGINA INTACTO */}
+			{/* CATEGORIAS / PRODUTOS */}
 			<section
 				className="w-full py-24"
 				style={{ backgroundImage: "url('/bg-textura.jpg')" }}
 			>
 				<div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
-					{/* cards */}
+					<Link href="/produtos/oraculos">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px]">
+							<Image
+								src="/categorias/oraculos.jpg"
+								alt="Oráculos"
+								width={400}
+								height={300}
+								className="rounded-t-lg object-cover h-[220px] w-full"
+							/>
+							<CardContent className="p-6 text-center">
+								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+									Oráculos
+								</h3>
+								<p className="text-red-600 text-sm">
+									Leituras espirituais diretas, sem rodeios.
+								</p>
+							</CardContent>
+						</Card>
+					</Link>
+
+					<Link href="/produtos/magias">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px]">
+							<Image
+								src="/categorias/magias.jpg"
+								alt="Magias"
+								width={400}
+								height={300}
+								className="rounded-t-lg object-cover h-[220px] w-full"
+							/>
+							<CardContent className="p-6 text-center">
+								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+									Magias
+								</h3>
+								<p className="text-red-600 text-sm">
+									Trabalhos energéticos sérios, com fundamento.
+								</p>
+							</CardContent>
+						</Card>
+					</Link>
+
+					<Link href="/produtos/farmacia">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px]">
+							<Image
+								src="/categorias/farmacia.jpg"
+								alt="Farmácia Espiritual"
+								width={400}
+								height={300}
+								className="rounded-t-lg object-cover h-[220px] w-full"
+							/>
+							<CardContent className="p-6 text-center">
+								<h3 className="text-2xl text-yellow-500 font-bold mb-3">
+									Farmácia Espiritual
+								</h3>
+								<p className="text-red-600 text-sm">
+									Preparos feitos conforme necessidade real.
+								</p>
+							</CardContent>
+						</Card>
+					</Link>
 				</div>
 			</section>
 
-			<RelatosCarousel />
+			{/* RELATOS */}
+			<section className="px-6 py-24 bg-red-950">
+				<h2 className="text-4xl text-center text-yellow-500 font-bold mb-12">
+					Relatos Reais de Clientes
+				</h2>
+				<RelatosCarousel />
+			</section>
+
+			{/* BLOCO FINAL */}
+			<div className="flex justify-center items-center py-20 bg-black max-w-6xl mx-auto">
+				<div className="relative w-full h-[320px]">
+					<Image
+						src="/ze-pilintra.png"
+						alt="Zé Pilintra"
+						fill
+						className="object-contain"
+					/>
+				</div>
+			</div>
+
+			<footer className="text-center text-xs text-red-800 pb-6">
+				Resultados variam conforme fé, merecimento e situação espiritual.
+			</footer>
+
 			<WhatsappFloating />
 		</main>
 	);
