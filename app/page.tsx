@@ -94,7 +94,7 @@ export default function Home() {
 							perceber caminhos que não correspondiam à verdade do meu espírito
 							e intenções que não caminhavam em retidão, segui adiante. Busquei
 							a fonte mais profunda e me batizei na Quimbanda Ancestral, templo
-							fr quimbanda Rei 7 da lira, onde os Exus primordiais caminham, os
+							de Quimbanda Rei 7 da Lira, onde os Exus primordiais caminham, os
 							mortos falam e a magia não se aprende — se desperta.
 						</p>
 
