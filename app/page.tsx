@@ -66,6 +66,8 @@ export default function Home() {
 
 					<div className="space-y-8 text-red-600 leading-relaxed text-lg">
 						<p>
+							Há quatro anos iniciei minha caminhada consciente na Umbanda, numa
+							busca diária, assídua e silenciosa pelos mistérios do invisível.
 							pelos mistérios do invisível. Atravessei casas, correntes e provas
 							até firmar meus pés na Casa de Umbanda Pai Oxalá, onde, há três
 							anos, foi me proporcionado vivências e experiências incríveis.
