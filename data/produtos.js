@@ -5,7 +5,7 @@ export const produtos = [
 		titulo: "Dados da Malandragem",
 		descricao: "Respostas diretas sobre amor, dinheiro e caminhos.",
 		valor: "R$ 150",
-		image: "/produtos/dados.jpg",
+		image: "/produtos/dados-da-malandragem.jpeg",
 		categoria: "oraculos",
 	},
 	{
@@ -13,7 +13,7 @@ export const produtos = [
 		titulo: "Cartas Ciganas",
 		descricao: "Leitura profunda e detalhada da sua situação.",
 		valor: "R$ 200",
-		image: "/produtos/cigana.jpg",
+		image: "/produtos/cartas-ciganas.jpeg",
 		categoria: "oraculos",
 	},
 	{
@@ -21,7 +21,7 @@ export const produtos = [
 		titulo: "Oráculo Ancestral",
 		descricao: "Conexão espiritual com guias ancestrais.",
 		valor: "R$ 250",
-		image: "/produtos/ancestral.jpg",
+		image: "/produtos/oraculo-ancestral.jpeg",
 		categoria: "oraculos",
 	},
 	{
@@ -29,7 +29,7 @@ export const produtos = [
 		titulo: "Cabala",
 		descricao: "Leitura cabalística profunda.",
 		valor: "R$ 300",
-		image: "/produtos/cabala.jpg",
+		image: "/produtos/cabala.jpeg",
 		categoria: "oraculos",
 	},
 

@@ -8,6 +8,7 @@ export default async function CategoriaPage({ params }) {
 	const { categoria } = await params;
 
 	const produtosCategoria = produtos.filter((p) => p.categoria === categoria);
+	console.log(produtosCategoria);
 
 	if (!produtosCategoria.length) {
 		notFound();
