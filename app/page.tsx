@@ -160,7 +160,7 @@ export default function Home() {
 			>
 				<div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 					<Link href="/produtos/oraculos">
-						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px]">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] p-0">
 							<Image
 								src="/oraculos.png"
 								alt="Oráculos"
@@ -177,7 +177,7 @@ export default function Home() {
 					</Link>
 
 					<Link href="/produtos/magias">
-						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px]">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] p-0">
 							<Image
 								src="/magias.png"
 								alt="Magias"
@@ -194,7 +194,7 @@ export default function Home() {
 					</Link>
 
 					<Link href="/produtos/farmacia">
-						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px]">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full min-h-[420px] p-0">
 							<Image
 								src="/farmacia.png"
 								alt="Farmácia Espiritual"
