@@ -8,7 +8,6 @@ export default async function CategoriaPage({ params }) {
 	const { categoria } = await params;
 
 	const produtosCategoria = produtos.filter((p) => p.categoria === categoria);
-	console.log(produtosCategoria);
 
 	if (!produtosCategoria.length) {
 		notFound();
@@ -23,14 +22,15 @@ export default async function CategoriaPage({ params }) {
 			<section className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
 				{produtosCategoria.map((p) => (
 					<Link key={p.slug} href={`/produtos/${categoria}/${p.slug}`}>
-						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer h-full flex flex-col">
+						<Card className="bg-black border-red-900 hover:scale-105 transition cursor-pointer flex flex-col p-0 overflow-hidden">
 							<Image
 								src={p.image}
 								alt={p.titulo}
 								width={400}
-								height={300}
-								className="rounded-t-lg object-cover h-55 w-full"
+								height={400}
+								className="rounded-t-lg object-cover w-full"
 							/>
+
 							<CardContent className="p-6 flex-1 flex flex-col justify-between">
 								<div>
 									<h3 className="text-xl text-yellow-500 font-bold">
