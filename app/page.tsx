@@ -10,24 +10,6 @@ import RelatosCarousel from "@/components/RelatosCarousel";
 export default function Home() {
 	return (
 		<main className="bg-black text-red-700">
-			{/* HEADER */}
-			<header className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur border-b border-red-900">
-				<div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-					<Link href="/" className="text-yellow-500 font-extrabold text-lg">
-						Bruxo Lira
-					</Link>
-
-					<nav className="flex gap-6 text-sm">
-						<Link
-							href="/manifesto"
-							className="text-red-500 hover:text-yellow-500 transition"
-						>
-							Manifesto
-						</Link>
-					</nav>
-				</div>
-			</header>
-
 			{/* HERO */}
 			<section
 				className="min-h-screen flex items-center px-6 relative bg-cover bg-center pt-24"
