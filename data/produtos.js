@@ -95,7 +95,7 @@ export const produtos = [
 		titulo: "Garrafada Noites de Paz (Insônia)",
 		descricao:
 			"Composto de ervas calmantes para silenciar a mente e induzir um sono reparador e profundo.",
-		valor: "R$ 35,00",
+		valor: "R$ 40,00",
 		image: "/produtos/garrafada-insonia.jpg",
 		categoria: "farmacia",
 	},
@@ -104,7 +104,7 @@ export const produtos = [
 		titulo: "Garrafada Equilíbrio d'Alma",
 		descricao:
 			"Auxilia no tratamento de distúrbios emocionais, estabilizando o humor e trazendo clareza mental.",
-		valor: "R$ 35,00",
+		valor: "R$ 40,00",
 		image: "/produtos/garrafada-emocional.jpg",
 		categoria: "farmacia",
 	},
@@ -131,7 +131,7 @@ export const produtos = [
 		titulo: "Garrafada Calmaria",
 		descricao:
 			"Fórmula natural para reduzir a agitação, palpitações e o fluxo excessivo de pensamentos.",
-		valor: "R$ 35,00",
+		valor: "R$ 40,00",
 		image: "/produtos/garrafada-ansiedade.jpg",
 		categoria: "farmacia",
 	},
@@ -149,7 +149,7 @@ export const produtos = [
 		titulo: "Garrafada Fluidez (Hipertensão)",
 		descricao:
 			"Auxilia no controle da pressão arterial e melhora a circulação sanguínea de forma natural.",
-		valor: "R$ 35,00",
+		valor: "R$ 40,00",
 		image: "/produtos/garrafada-hipertensao.jpg",
 		categoria: "farmacia",
 	},
@@ -158,7 +158,7 @@ export const produtos = [
 		titulo: "Garrafada Brilho Próprio",
 		descricao:
 			"Fórmula vibracional para elevar o amor-próprio e a confiança na própria jornada.",
-		valor: "R$ 35,00",
+		valor: "R$ 40,00",
 		image: "/produtos/garrafada-autoestima.jpg",
 		categoria: "farmacia",
 	},
