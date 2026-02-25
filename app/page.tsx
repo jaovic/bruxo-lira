@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import WhatsappFloating from "@/components/WhatsappFloating";
 import RelatosCarousel from "@/components/RelatosCarousel";
+import ApostilaSection from "@/components/ApostilaSection";
 
 export default function Home() {
 	return (
@@ -96,6 +97,10 @@ export default function Home() {
 						</Card>
 					</Link>
 				</div>
+			</section>
+
+			<section className="w-full py-24 bg-black border-t">
+				<ApostilaSection />
 			</section>
 
 			{/* RELATOS */}
