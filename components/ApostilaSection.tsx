@@ -14,7 +14,7 @@ export default function ApostilaSection() {
 	const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
 
 	return (
-		<section className="w-full py-24 bg-black border-t border-yellow-500">
+		<section className="w-full py-24 bg-black">
 			<div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 				{/* IMAGEM */}
 				<div className="flex justify-center">
