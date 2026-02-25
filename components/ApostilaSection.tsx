@@ -36,7 +36,7 @@ export default function ApostilaSection() {
 					</h2>
 
 					<p className="text-red-500 leading-relaxed mb-6">
-						Desenvolvida pelo médium, Gabriel A. Ribeiro, esta apostila reúne
+						Desenvolvida pelo bruxo Gabriel do 7 da Lira, esta apostila reúne
 						fundamentos, ensinamentos e orientações sobre o uso espiritual de
 						ervas, plantas, flores, raízes, cascas e grãos, oferecendo
 						conhecimento organizado para quem deseja compreender e aplicar esses
